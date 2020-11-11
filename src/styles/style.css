@@ -35,15 +35,54 @@ header {
 }
 
 .header-h1 {
-  position: absolute;
+  display: block;
+  position: relative;
+  padding-top: 121px;
+  margin-left: 165px;
   margin-top: 0px;
   margin-bottom: 0px;
-  top: 121px;
-  left: 165px;
+}
+
+.text-block {
+  display: flex;
+  position: relative;
+  margin-top: 225px;
+  margin-left: 165px;
+  }
+
+.text-left {
+    width: 540px;
+    margin-right: 30px;
+}
+
+.text-right {
+    width: 540px;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 38px;
+  padding: 11px 24px;
+  font-family: Open-Sans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #FE8A02;
+  text-decoration: none;
+}
+
+.text-font {
+  font-family: Open-Sans, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #2A2626;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .h1-font {
-  font-family: Neucha, Arial, Helvetica, sans-serif;
+  font-family: Neucha, Arial, sans-serif;
   font-size: 72px;
   line-height: 1.2em;
   font-weight: 400; 
@@ -62,4 +101,18 @@ header {
   src: url("../fonts/Neucha-Regular.ttf") format("truetype"); 
   font-style: normal; 
   font-weight: 400; 
-  } 
+  }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
