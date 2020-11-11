@@ -7,27 +7,55 @@ header {
   }
 
  .section {
-  width: 1110px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  position: relative;
+  width: 1440px;
+  top: 100px;
+  bottom: 100px;
   overflow: hidden;
   }
   
 .bg-before::before {
-  content: '';
   position: absolute;
-  z-index: -1;
-  width: 1110px;
+  width: 1440px;
   height: 1005px;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  content: '';
+  z-index: -1;
 }
 
 .main-image {
-  position: relative;
-  top: 55px;
-	height: 525px;
-	right: -270px;
+  position: absolute;
+  top: 66px;
+  height: 504px;
+  width: 1082px;
+	right: -77px;
 }
+
+.header-h1 {
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 121px;
+  left: 165px;
+}
+
+.h1-font {
+  font-family: Neucha, Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  line-height: 1.2em;
+  font-weight: 400; 
+}
+
+.orange {
+  color: #FE8A02;
+}
+
+@font-face {
+  font-family: "Neucha"; 
+  src: url("../fonts/Neucha-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: 400; 
+  } 
