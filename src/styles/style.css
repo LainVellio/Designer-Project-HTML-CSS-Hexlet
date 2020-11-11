@@ -53,6 +53,10 @@ header {
   color: #FE8A02;
 }
 
+.black {
+  color: #2A2626;
+}
+
 @font-face {
   font-family: "Neucha"; 
   src: url("../fonts/Neucha-Regular.ttf") format("truetype"); 
