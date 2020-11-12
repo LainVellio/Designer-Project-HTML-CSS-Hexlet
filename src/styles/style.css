@@ -1,20 +1,16 @@
-/** CSS STYLE **/
-header {
-  display: flex;
-  justify-content: center;
-  height: 1005px;
-  width: 100%;
-  }
+ h1, h2, h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
 
- .section {
+ .bg {
   position: relative;
+  margin: 0px auto;
   width: 1440px;
-  top: 100px;
-  bottom: 100px;
   overflow: hidden;
   }
-  
-.bg-before::before {
+
+.bg::before {
   position: absolute;
   width: 1440px;
   height: 1005px;
@@ -26,43 +22,47 @@ header {
   z-index: -1;
 }
 
-.main-image {
-  position: absolute;
-  top: 66px;
-  height: 504px;
-  width: 1082px;
-	right: -77px;
+.section {
+  margin: 100px auto;
+  width: 1110px;
 }
 
+.main-image {
+  position: absolute;
+  height: 504px;
+  width: 1005px;
+  margin-left: 270px;
+ }
+
 .header-h1 {
-  display: block;
   position: relative;
-  padding-top: 121px;
-  margin-left: 165px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-top: 55px;
 }
 
 .text-block {
-  display: flex;
-  position: relative;
   margin-top: 225px;
-  margin-left: 165px;
-  }
-
-.text-left {
-    width: 540px;
-    margin-right: 30px;
 }
 
-.text-right {
+.text-left {
+    position: absolute;
     width: 540px;
+  }
+
+.text-right {
+    position: relative;
+    width: 540px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.main-h2 {
+  text-align: center;
 }
 
 .btn {
-  position: absolute;
+  display: inline-block;
   margin-top: 38px;
-  padding: 11px 24px;
+  padding: 12px 24px;
   font-family: Open-Sans, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -78,14 +78,20 @@ header {
   font-weight: 400;
   color: #2A2626;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
+  }
 
-.h1-font {
+.h-font {
   font-family: Neucha, Arial, sans-serif;
-  font-size: 72px;
   line-height: 1.2em;
   font-weight: 400; 
+}
+
+.h1-size {
+  font-size: 72px;
+}
+
+.h2-size {
+  font-size: 60px;
 }
 
 .orange {
