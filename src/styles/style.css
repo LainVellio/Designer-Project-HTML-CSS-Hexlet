@@ -1,10 +1,9 @@
- h1, h2, h3 {
+ h1, h2, h3, h4 {
   margin-top: 0px;
   margin-bottom: 0px;
  }
 
  .bg {
-  position: relative;
   margin: 0px auto;
   width: 1440px;
   overflow: hidden;
@@ -23,6 +22,7 @@
 }
 
 .section {
+  position: relative;
   margin: 100px auto;
   width: 1110px;
 }
@@ -44,19 +44,16 @@
 }
 
 .text-left {
-    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
     width: 540px;
   }
 
 .text-right {
-    position: relative;
+    display: inline-block;
     width: 540px;
-    margin-right: 0px;
     margin-left: auto;
-}
-
-.main-h2 {
-  text-align: center;
 }
 
 .btn {
@@ -71,19 +68,81 @@
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.h-video {
+  margin: 35px auto;
+}
+
+.video {
+  display: block;
+  margin: 0px auto;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  margin-bottom: -200px;
+}
+
+.padding-200 {
+  padding-top: 200px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.card-h-size {
+  width: 350px;
+  height: 323px;
+}
+
+.card-1-2-size {
+  width: 302px;
+  height: 275px;
+}
+
+.card-3-4-5-size {
+  width: 302px;
+  height: 300px;
+}
+
+.c-m-right {
+margin-right: 30px;
+}
+
+.c-m-bottom {
+  margin-bottom: 20px;
+}
+
+.card-padding {
+  padding: 24px;
+}
+
 .text-font {
   font-family: Open-Sans, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   font-weight: 400;
   color: #2A2626;
-  margin-top: 0px;
   }
 
 .h-font {
   font-family: Neucha, Arial, sans-serif;
   line-height: 1.2em;
   font-weight: 400; 
+}
+
+.card-bg {
+  background-color: white;
+}
+
+.number {
+  margin-bottom: 40px;
+  font-family: Neucha, Arial, sans-serif;
+  line-height: 1em;
+  font-weight: 400; 
+  font-size: 64px;
 }
 
 .h1-size {
@@ -94,12 +153,28 @@
   font-size: 60px;
 }
 
+.h3-size {
+  font-size: 52px;
+}
+
+.h4-size {
+  font-size: 34px;
+}
+
 .orange {
   color: #FE8A02;
 }
 
 .black {
   color: #2A2626;
+}
+
+.white {
+  color: white;
+}
+
+.bg-black {
+  background-color: #42413C;
 }
 
 @font-face {
