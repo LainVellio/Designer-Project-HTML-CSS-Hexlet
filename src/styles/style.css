@@ -3,7 +3,7 @@
   margin-bottom: 0px;
  }
 
- .bg {
+.bg {
   margin: 0px auto;
   width: 1440px;
   overflow: hidden;
@@ -98,6 +98,7 @@
 }
 
 .card-1-2-size {
+  display: block;
   width: 302px;
   height: 275px;
 }
@@ -135,6 +136,7 @@ margin-right: 30px;
 
 .card-bg {
   background-color: white;
+  text-decoration: none;
 }
 
 .number {
@@ -143,6 +145,16 @@ margin-right: 30px;
   line-height: 1em;
   font-weight: 400; 
   font-size: 64px;
+  color: #42413C;
+  ;
+}
+
+.a-hover:hover {
+  background-color: #FE8A02;
+}
+
+.a-hover:hover div.number, .a-hover:hover h4.text-orange, .a-hover:hover p.text-font {
+  color: white;
 }
 
 .h1-size {
@@ -161,20 +173,21 @@ margin-right: 30px;
   font-size: 34px;
 }
 
-.orange {
+.text-orange {
   color: #FE8A02;
 }
 
-.black {
+.text-black {
   color: #2A2626;
 }
 
-.white {
+.text-white {
   color: white;
 }
 
 .bg-black {
   background-color: #42413C;
+  background-attachment: local;
 }
 
 @font-face {
