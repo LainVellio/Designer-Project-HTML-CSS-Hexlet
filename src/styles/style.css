@@ -1,15 +1,22 @@
- h1, h2, h3, h4 {
+ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
  }
 
 .bg {
+  position: relative;
   margin: 0px auto;
-  width: 1440px;
+  width: 100%;
+  z-index: 1;
   overflow: hidden;
-  }
+}
 
-.bg::before {
+.center {
+  width: 1440px;
+  margin: 0px auto;
+}
+
+.bg-before::before {
   position: absolute;
   width: 1440px;
   height: 1005px;
@@ -23,16 +30,32 @@
 
 .section {
   position: relative;
-  margin: 100px auto;
+  margin: 0px auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 1110px;
 }
 
-.main-image {
+.header-image {
   position: absolute;
   height: 504px;
   width: 1005px;
   margin-left: 270px;
- }
+}
+
+.main-img {
+  vertical-align: top;
+  width: 540px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.m-left {
+  margin-left: 25px;
+}
+
+.m-right {
+margin-right: 25px;
+}
 
 .header-h1 {
   position: relative;
@@ -61,11 +84,12 @@
   margin-top: 38px;
   padding: 12px 24px;
   font-family: Open-Sans, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
   background-color: #FE8A02;
   text-decoration: none;
+}
+
+.btn:hover {
+  background-color:  #EA7600
 }
 
 .text-center {
@@ -83,7 +107,7 @@
   margin-bottom: -200px;
 }
 
-.padding-200 {
+.padding-t-200 {
   padding-top: 200px;
 }
 
@@ -120,13 +144,41 @@ margin-right: 30px;
   padding: 24px;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.m-left-auto {
+  margin-left: auto;
+}
+
+.m-right-auto {
+  margin-right: auto;
+}
+
+.w-540 {
+  width: 540px;
+}
+
+.h6 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .text-font {
   font-family: Open-Sans, Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.6em;
   font-weight: 400;
-  color: #2A2626;
-  }
+}
+
+.text-font-b {
+  font-family: Open-Sans, Arial, sans-serif;
+  line-height: 1.6em;
+  font-weight: 700;
+}
 
 .h-font {
   font-family: Neucha, Arial, sans-serif;
@@ -135,7 +187,7 @@ margin-right: 30px;
 }
 
 .card-bg {
-  background-color: white;
+  background-color: #F5F4F0;
   text-decoration: none;
 }
 
@@ -157,20 +209,32 @@ margin-right: 30px;
   color: white;
 }
 
-.h1-size {
+.text-size-72 {
   font-size: 72px;
 }
 
-.h2-size {
+.text-size-60 {
   font-size: 60px;
 }
 
-.h3-size {
+.text-size-52 {
   font-size: 52px;
 }
 
-.h4-size {
+.text-size-34 {
   font-size: 34px;
+}
+
+.text-size-24 {
+  font-size: 24px;
+}
+
+.text-size-16 {
+  font-size: 16px;
+}
+
+.text-size-14 {
+  font-size: 14px;
 }
 
 .text-orange {
@@ -185,9 +249,31 @@ margin-right: 30px;
   color: white;
 }
 
+.text-sec {
+  color: #908D8B;
+}
+
+.text-dark {
+  color: #42413C
+}
+
 .bg-black {
   background-color: #42413C;
-  background-attachment: local;
+ }
+
+.bg-light {
+  background-color: #F5F4F0;
+}
+
+.bg-dark {
+  background-color: #B09A81;
+}
+.bg-orange {
+  background-color: #FE8A02;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 @font-face {
