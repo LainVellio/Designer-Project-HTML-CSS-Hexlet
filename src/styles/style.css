@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg {
   position: relative;
   margin: 0px auto;
-  z-index: 1;
+  z-index: 0;
   min-width: 1440px;
 }
 
@@ -100,11 +100,13 @@ margin-right: 25px;
 }
 
 .video {
+  position: relative;
   display: block;
   margin: 0px auto;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
   margin-bottom: -200px;
-}
+  z-index: 1;
+  }
 
 .padding-t-200 {
   padding-top: 200px;
@@ -143,6 +145,58 @@ margin-right: 30px;
   padding: 24px;
 }
 
+.update {
+  width: 390px;
+  margin-right: 125px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.email {
+  vertical-align: top;
+  padding-top: 40px;
+}
+
+.form {
+  height: 50px;
+  margin: 10px 0px;
+}
+
+.input-email {
+  vertical-align: top;
+  width: 365px;
+  height: 20px;
+  padding: 15px;
+  border: none;
+  float: left;
+}
+
+.input-email::placeholder {
+  font-family: Open-Sans, Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  opacity: 0.2;
+   }
+  
+.btn-email {
+  width: 70px;
+  height: 50px;
+  background-color: #FE8A02;
+  border: none;
+  float:left;
+}
+
+.btn-email::before {
+  position: relative;
+  top: 4px;
+  content: url(../images/vector.png);
+}
+
+ .btn-email:hover {
+  background-color: #EA7600;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -159,12 +213,21 @@ margin-right: 30px;
   width: 540px;
 }
 
+.padding-t-b-16 {
+  padding: 16px 0px;
+}
+
 .h6 {
   margin-top: 100px;
   margin-bottom: 20px;
   padding-left: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.contacts {
+  margin-top: 100px;
+  text-align: center;
 }
 
 .text-font {
@@ -206,6 +269,10 @@ margin-right: 30px;
 
 .a-hover:hover div.number, .a-hover:hover h4.text-orange, .a-hover:hover p.text-font {
   color: white;
+}
+
+.rules {
+  color: white
 }
 
 .text-size-72 {
@@ -254,6 +321,10 @@ margin-right: 30px;
 
 .text-dark {
   color: #42413C
+}
+
+.text-blue {
+  color: #1085C5;
 }
 
 .bg-black {
