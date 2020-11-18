@@ -165,6 +165,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #EA7600;
 }
 
+.padding-t-b-16 {
+  padding: 16px 0px;
+}
+
 .h6 {
   margin-top: 100px;
   margin-bottom: 20px;
